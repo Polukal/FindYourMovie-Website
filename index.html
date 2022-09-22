@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+
     <title>Find Your Movie</title>
 </head>
 
@@ -41,37 +41,25 @@
 
         <div class="search__container">
             <form action="" class="search-bar">
-                <input type="text" placeholder="Search Movies" name="q">
+                <input type="search" placeholder="Search Movie Title" id="movie-search-box">
                 <button type="submit"><img src="assets/search.svg" alt=""></button>
             </form>
         </div>
 
         <div class="movie__container">
             <div class="row">
-                <div class="movies__header">
-                    <h2 class="section__title movies__header--title"></h2>
-                    <select id="filter">
-                        <option value disabled selected>Sort</option>
-                        <option value="RATING">Rating, High to Low</option>
-                        <option value="DATE">Recent</option>
-                    </select>
-                </div>
-
-                <div class="movies">
+                <div class="movies" id="movies">
                     <div class="movie">
-                        <figure class="book__img--wrapper">
-                            <img class="movie__img"
-                                src="https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
-                                alt="">
-                        </figure>
-                        <div class="movie__title">Fast And The Furious</div>
-                        <div class="movie__ratings">IMDB Rating: </div>
-                    </div>
+                       
+
+                        
+                    
                 </div>
             </div>
         </div>
     </div>
-
+br
 </body>
+<script src="index.js"></script>
 
 </html>

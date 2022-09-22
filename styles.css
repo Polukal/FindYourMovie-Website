@@ -224,3 +224,12 @@ FEATURES
 .filter{
   color: #58629b;
 }
+
+.more__info{
+  padding: 3% 3% 7% 3%;
+  width: 74%;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: white;
+
+}
