@@ -4,12 +4,16 @@
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('movies');
 
+function submitButtonClick(event) {
+    event.preventDefault();
+}
 movieSearchBox.addEventListener("input", e => {
     const value = e.target.value
     console.log(value)
     loadMovies(value)
     
 })
+
 
 //load movies from API
 async function loadMovies(searchItem){
@@ -33,7 +37,7 @@ function displayMovieDetails(movieData){
     <div class="movie__ratings">IMDB Rating: ${movieData.imdbRating} </div>
     
 </div>
-<div class="more__info"> Year: ${movieData.Year} <br> Genre: ${movieData.Genre} <br> Runtime: ${movieData.Runtime} <br>
+<div class="more__info"> Director: ${movieData.Director}<br> <br> Cast: ${movieData.Actors}<br> <br> Year: ${movieData.Year} <br> <br> Genre: ${movieData.Genre} <br>  <br>Runtime: ${movieData.Runtime} <br> <br>
 ${movieData.Plot}
 </div>`
 }
