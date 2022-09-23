@@ -3,15 +3,16 @@
 
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('movies');
+const searchButton = document.getElementById('search-button');
 
 function submitButtonClick(event) {
     event.preventDefault();
 }
-movieSearchBox.addEventListener("input", e => {
+movieSearchBox.addEventListener('keyup', e => {
     const value = e.target.value
     console.log(value)
     loadMovies(value)
-    
+
 })
 
 
@@ -25,7 +26,7 @@ async function loadMovies(searchItem){
 
 }
 
-
+//display movie information
 function displayMovieDetails(movieData){ 
     searchList.innerHTML = `<div class="movie">
     <figure class="book__img--wrapper">
