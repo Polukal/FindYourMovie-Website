@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 
     <title>Find Your Movie</title>
@@ -13,7 +14,6 @@
 <body>
     <div class="background">
         <nav>
-
             <ul class="nav__link--list">
                 <li class="nav__link">
                     <a href="#" class="
@@ -34,14 +34,31 @@
           ">Contact</a>
                 </li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"><a href="#" class="menu__link">Home</a>
+                    </li>
 
+                    <li class="menu__list"><a href="#" class="menu__link">Find your movie</a>
+                    </li>
+
+                    <li class="menu__list"><a href="#" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <h3 class="search__text">Browse Our Movies</h3>
 
         <div class="search__container">
             <form action="" class="search-bar">
-                <input type="text" placeholder="Search Movie Title" id="movie-search-box">
+                <input onkeypress="return event.keyCode != 13" type="text" placeholder="Search Movie Title" id="movie-search-box">
                 <button type="button" id="search-button"><img src="assets/search.svg" alt=""></button>
             </form>
         </div>
@@ -50,19 +67,19 @@
             <div class="row">
                 <div class="movies" id="movies">
                     
-                    <figure class="book__img--wrapper">
+                    <figure class="movie__img--wrapper">
                         <img class="movie__img"
                             src="/assets/poster1.jpeg"
                             alt="">
                     </figure>
 
-                    <figure class="book__img--wrapper">
+                    <figure class="movie__img--wrapper">
                         <img class="movie__img"
                             src="/assets/poster3.jpeg"
                             alt="">
                     </figure>
 
-                    <figure class="book__img--wrapper">
+                    <figure class="movie__img--wrapper">
                         <img class="movie__img"
                             src="/assets/poster4.jpeg"
                             alt="">

@@ -5,9 +5,6 @@ const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('movies');
 const searchButton = document.getElementById('search-button');
 
-function submitButtonClick(event) {
-    event.preventDefault();
-}
 movieSearchBox.addEventListener('keyup', e => {
     const value = e.target.value
     console.log(value)
@@ -43,6 +40,12 @@ ${movieData.Plot}
 </div>`
 }
 
+function openMenu(){
+    document.body.classList += " menu--open";
+}
 
+function closeMenu(){
+    document.body.classList.remove('menu--open');
+}
 
 
